@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url("../img/PLMUN\ Building.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.logo{
+	margin: 20px auto;
+	width: 200px;
+    z-index: 1;
+}
+
+ .content {
+    position: relative;
+    top: -30px;
+    max-width: 100%;
+    margin: 80px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+ }
+
+.content .info h2 {
+    color: #ffF;
+    font-size: 50px;
+    text-shadow: 2px 2px#11325F;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    line-height: 70px;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+
+.content .info h2 span {
+    color:  #11325F;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px white;
+    font-size: 100px;
+    font-weight: 800;
+}
+
+.content .info p{
+    color: rgb(255, 255, 255);
+    max-width: 500px;
+    font-size: 18px;
+    font-weight: 100;
+    margin-bottom: 50px;
+    
+}
+
+.content .info-btn {
+    color: #fff;
+    background: #11325F;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: background;
+}
+
+.content .info-btn:hover{
+    background: #ffffff86; 
+}
+h3{
+    font-size: 25px;
+    color: #11325F;
+    padding-top: 25px;
+}
+
+.log{
+    position: relative;
+    right: 80px;
+    top: -10px;
+    width: 400px;
+    background-color: #ffffffc5;
+    border-radius: 30px;
+    text-align: center;
+    height: 300px;
+}
+
+
+.reg{
+    position: relative;
+    right: 80px;
+    top: -30px;
+    width: 400px;
+    background-color: #ffffffc5;
+    border-radius: 30px;
+    height: 500px;
+    text-align: center;
+}
+
+
+input[type=submit]{   
+    background-color: #11325F;   
+    width: 85%;  
+    border-radius: 5px;
+     color: rgb(255, 255, 255);   
+     padding: 15px;   
+     margin: 10px 28px;   
+     border: none;   
+     cursor: pointer;   
+}   
+
+input[type=text], input[type=password], input[type=email], input[type=file]{   
+    width: 80%;   
+    margin: 10px 10px;  
+    padding: 9px 15px;   
+    display: inline-block;   
+    border: 2px solid #11325F;   
+    box-sizing: content-box; 
+}
+.media-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.media-icons a{
+    position: relative;
+    color: #FFFFFF;
+    font-size: 30px;
+    transition: 0.3s;
+    transition-property: transform;
+    filter: drop-shadow(2px 2px #000000) ;
+}
+
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+
+.media-icons a:hover{
+    transform: scale(2);
+}
+
+label {
+    display: none; 
+}
+#check {
+    position: absolute;
+    z-index: 3;
+}
+
+@media (max-width: 960px){
+    header .navigation{
+        display:none;
+    }
+    label {
+        display:block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+    label:hover{
+        color:#fff;
+    }
+    label .close-btn{
+        display: none;
+    }
+    #check:checked ~ header .navigation{
+        z-index: 2;
+        position: fixed;
+        background: #e9ecef51;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #check:checked ~ header .navigation a{
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+    #check:checked ~ header label .menu-btn{
+        display: none;
+    }
+    #check:checked ~ header label .close-btn{
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+    label .menu-btn{
+        position: absolute;
+        color: #fff;
+    }
+    header .logo{
+        position: absolute;
+        bottom: -6px;
+    }
+    .content .info h2{
+        font-size: 45px;
+        line-height: 50px;
+    }
+
+    .content .info h2 span{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .content .info p{
+        font-size: 14px;;
+    }
+
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+}
+

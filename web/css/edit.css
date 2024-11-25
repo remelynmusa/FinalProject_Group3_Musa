@@ -1,0 +1,149 @@
+/* General styling */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    background-image: url("../img/PLMUN\ Building.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header */
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #11325F;
+}
+
+header .logo {
+    height: 50px;
+}
+
+/* Form Styling */
+form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+    width: 100%;
+    height: 87vh;
+    background-image: url("../img/PLMUN\ Building.jpg");
+    background-size: cover;
+    background-position: center;
+    
+}
+
+form h2 {
+    text-align: center;
+    color: #11325F;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+form select {
+    background-color: #f7f7f7;
+}
+
+form button, a [type="submit"] {
+    background-color: #11325F;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+form button, a [type="submit"]:hover {
+    background-color: #0d2b46;
+}
+
+form label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+/* Buttons in header */
+header .navigation a {
+    font-size: 20px;
+    color: white;
+    background: #11325F;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 30px;
+    transition: 0.3s;
+    font-family: "Poppins",sans-serif;
+}
+
+header .navigation a:hover {
+    background-color: #ffffff86;
+}
+
+/* Footer */
+footer {
+    background-color: #11325F;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 960px) {
+    header .navigation {
+        display: none;
+    }
+
+    #check:checked ~ header .navigation {
+        display: block;
+    }
+
+    label {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    
+}

@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+  h1{
+    color: white;
+    font-size: 30px;
+    padding: 20px;
+  }
+
+  table, td{
+  background-color:  rgb(17, 50, 95, 0.5);
+  text-align: center;
+}
+
+th{
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 20px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  height: 50px;
+  vertical-align: bottom;
+  color: white;
+  padding-left: 20px;
+
+}
+
+section{
+	width: 100%;
+	height: 250vh;
+    background-image: url("../img/PLMUN\ Building.jpg");
+	background-size: cover;
+    background-position: center;
+}
+
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 35px;
+    background-color: #11325F;
+}
+
+header .logo{
+    position: relative;
+    width: 75px;
+    height: 20px;
+}
+
+header .navigation a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background: #11325F;
+    text-shadow: #11325F;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: 0.3s;
+    transition-property: background;
+}
+ header .navigation a:not(:last-child){
+    margin-right: 5px;
+
+ }
+
+ header .navigation a:hover{
+    background: #ffffff86; 
+ }
+
+.media-icons{
+    position: relative;
+    top: 30px;
+    align-items: center;
+    margin: auto;
+}
+
+.media-icons a{
+    position: relative;
+    color: #FFFFFF;
+    font-size: 30px;
+    transition: 0.3s;
+    transition-property: transform;
+    filter: drop-shadow(2px 2px #000000) ;
+}
+
+.media-icons a:not(:last-child){
+    margin-right: 60px;
+}
+
+.media-icons a:hover{
+    transform: scale(2);
+}
+
+label {
+    display: none; 
+}
+#check {
+    position: absolute;
+    z-index: 3;
+}
+
+@media (max-width: 960px){
+    header .navigation{
+        display:none;
+    }
+    label {
+        display:block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.3s;
+        transition-property: color;
+    }
+    label:hover{
+        color:#fff;
+    }
+    label .close-btn{
+        display: none;
+    }
+    #check:checked ~ header .navigation{
+        z-index: 2;
+        position: fixed;
+        background: #e9ecef51;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #check:checked ~ header .navigation a{
+        font-weight: 700;
+        margin-right: 0;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+    #check:checked ~ header label .menu-btn{
+        display: none;
+    }
+    #check:checked ~ header label .close-btn{
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+    label .menu-btn{
+        position: absolute;
+        color: #fff;
+    }
+    header .logo{
+        position: absolute;
+        bottom: -6px;
+    }
+}
+
+
+footer {
+    text-align: center;
+    color: #fff;
+}
+

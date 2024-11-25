@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 35px;
+    background-color: #11325F;
+}
+
+header .logo{
+    position: relative;
+    width: 75px;
+    height: 20px;
+}
+
+header .navigation a{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background: #11325F;
+    text-shadow: #11325F;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    line-height: 50px;
+    padding: 5px 15px;
+    border-radius: 30px;
+    transition: 0.3s;
+    transition-property: background;
+}
+ header .navigation a:not(:last-child){
+    margin-right: 5px;
+ }
+
+ header .navigation a:hover{
+    background: #ffffff86; 
+ }
+
+ section{
+	width: 100%;
+	height: 200vh;
+	background-color: #11325F;
+ }
+
+
+ .container-fluid
+ {
+	 position: relative;
+	 top: 70px;
+	 width: 100%;
+	 height: auto;
+	 padding: 0px 0px 80px 0px;
+ }
+ 
+ .container
+ {
+	 width: 1200px;
+	 height: auto;
+	 margin: auto;
+ }
+ 
+ .container .product-list{
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ text-align: left;
+ 
+ }
+ 
+ .container .product-list .product{
+	background-color: #ffffffc5;
+ 	margin-top: 30px;
+	text-align: center;
+	width: 23%;
+	height: 250px;
+	border-radius: 10px;
+ }
+
+
+ 
+ .container .product-list .product h4{
+	position: relative;
+	top: 20px;
+ 	padding: 3px 0px;
+ 	color: #000000;
+ 	font-weight: 700;
+ 	letter-spacing: 3px;
+ }
+ 
+ .container .product-list .product img{
+	position: relative;
+	top: 20px;
+	width: 180px;
+ }
+
+.search-box{
+	width: 100%;
+	position: relative;
+	top: 40px;
+	text-align: center;
+}
+
+input[type=text]{
+	width: 60%;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	outline:none;
+	text-align: center;
+	font-size: 17px;
+	font-weight:bold;
+}
+
+div input::placeholder {
+	font-size: 17px;
+	color:#575555;
+	font-weight:bold;
+	opacity:1;
+}
+
+
+
